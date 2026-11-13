@@ -29,6 +29,8 @@ custody. Its real firmware vendor and durable external-custody providers are
 absent, so the public Android entry fails closed. It is not a working capture
 distribution or device execution recipe. Its own tests compile the pinned sink
 source as a dependency without copying it or rerunning unchanged sink suites.
+The [consumer-seams guide](examples/wide-stereo-source/CONSUMER-SEAMS.md) describes
+the frozen packed-input alignment and its remaining provider/runtime boundaries.
 
 Python 3.12 or newer runs the core tooling without third-party packages.
 The full test suite includes numerical and GPU cases and needs NumPy,

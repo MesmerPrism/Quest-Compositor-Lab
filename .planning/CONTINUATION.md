@@ -171,3 +171,32 @@ Android Shell/reflection/permissions, Binder/Surface/death, native capture or
 vendor ACK, app drain, global idle/restart, held review, media or presentation.
 One original invocation/worker and conservative unknown custody are source
 semantics, not native ownership fences or a successful runtime result.
+
+## Frozen consumer-seams documentation
+
+The selected producer/consumer alignment is documented in
+`examples/wide-stereo-source/CONSUMER-SEAMS.md`: instance-owned ImageReader/Image/AHB input,
+the existing capture GL actor and Own pool, fixed deployed-v2 compatibility
+wire distinct from the neutral 19-word wire, retained acquisition through the
+actual producer fence, additive source identity, no saving and submission-owned
+exclusion. It introduces no code, controller, reducer, peer format, private
+provider or executable deployment recipe. The coherent platform-provider source
+revision and whole-carrier device proof remain pending.
+
+The guide records the selected accounting/drain join: stop media publication
+first, retain ACTIVE accounting for counted cleanup acquisitions, then seal and
+invalidate structurally after external retirement. This implementation and its
+end-to-end Stop test belong to the provider, with no new Lab reducer/API. Reader
+disarm/process-lifetime retention is not reader destruction or retirement.
+Android 14 AOSP Java acquisition/fence-wait references are independently pinned;
+their source evidence is not transferred NDK or proprietary runtime proof.
+
+Source/host test evidence remains with its exact unchanged code inputs; no
+foreground/graphics/device test is introduced for this documentation slice.
+Documentation closure/link/whitespace checks and independent public-document
+review passed with no findings. All 81 other prior inputs were verified
+byte-identical; no test suite or graphics/device probe was rerun. The source
+branch is `codex/wide-consumer-seams-guide`, based on retained main
+`97d7152f2624a29e5b00a5b9c24d3d3b4ccdb281`. No carrier/shared source or running
+inspection is modified. The guide will consolidate to main with a reviewed
+source checkpoint and exact remote readback.

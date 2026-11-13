@@ -43,6 +43,20 @@
       "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
       "license": "AGPL-3.0-or-later",
       "use": "Verbatim license text only"
+    },
+    {
+      "repository": "https://android.googlesource.com/platform/frameworks/base",
+      "revision": "android-14.0.0_r1",
+      "path": "media/jni/android_media_ImageReader.cpp",
+      "sha256": "a1fcbdd2242f40e075339380f4a0bf0d0cb79203e18e3d5948953d8f8f402de0",
+      "use": "framework Java-acquisition/fence-wait source-contract reference only; no implementation bytes imported; no proprietary runtime proof"
+    },
+    {
+      "repository": "https://android.googlesource.com/platform/frameworks/native",
+      "revision": "android-14.0.0_r1",
+      "path": "libs/gui/include/gui/BufferItemConsumer.h",
+      "sha256": "0ad0c5e763fc443b5574c415a864c60745ed80034423cedc25448d472cee1ca1",
+      "use": "framework Java-acquisition/fence-wait source-contract reference only; no implementation bytes imported; no proprietary runtime proof"
     }
   ],
   "files": [
@@ -60,7 +74,7 @@
     },
     {
       "path": ".planning/CONTINUATION.md",
-      "sha256": "ff88dceeb58ee6a963344c79387cd7e921083986f69352e1a1a5d19ab144e3b6",
+      "sha256": "d1a96f19b835e90135db92d37f9fb449aa5b0aeb9b312844e58968b38575198b",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -204,7 +218,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "6dbbe5e19a37767644bde408103bc45bcb4ac39b9c0c22e36a3d066794fbdd66",
+      "sha256": "bfb39a50e7152045daa9fda11c8886f23789bf82e4a59e6df3d6761e72334ed0",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -426,7 +440,7 @@
     },
     {
       "path": "examples/wide-stereo-source/README.md",
-      "sha256": "a2d30c2bb98ec00b2800978161f4a577f1ac1d1958a9fb976fa2ebe1a07e34ee",
+      "sha256": "6a4f75be53787c5bf86c2b7335e565127be5972f120609a33c149cf7cc4a43c6",
       "license": "AGPL-3.0-or-later",
       "origin": "authored for the neutral sink contract; no imported source history"
     },
@@ -555,6 +569,12 @@
       "sha256": "752f41dbff908dd7e34293806f2b06776bb39e63b6314c0f628e73494c7ccee9",
       "license": "AGPL-3.0-or-later",
       "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "examples/wide-stereo-source/CONSUMER-SEAMS.md",
+      "sha256": "5e1bf188531f64d5a9affeae3781d01696da110559af061d1fe24325c25245db",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored neutral guide from frozen producer/consumer owner alignment and public sink APIs; no implementation text, private pin table, vendor material or media copied"
     }
   ],
   "deliveries": [

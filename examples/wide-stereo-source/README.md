@@ -17,3 +17,7 @@ calibration. Real adoption must create its own reader, validate its exact
 descriptor, implement real resource observations and prove native underlay and
 effective output exclusion in the actual presentation carrier. A future Shell
 controller is separate work and must preserve genuine Shell identity/attribution.
+
+The [consumer-seams guide](CONSUMER-SEAMS.md) maps the selected packed AImage/AHB
+path to existing accounting and carrier-owned resources. It is documentation,
+with the actual provider source pin still pending; this fixture remains inert.
