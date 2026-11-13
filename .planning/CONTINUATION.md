@@ -3,10 +3,20 @@
 This is the repository's single mutable continuation. The external migration
 specification is reference context; it is not a runtime or machine-path dependency.
 
-Selected development branch: `codex/neutral-source-milestone` during the first
-reviewed source checkpoint. Intended public source remote:
-`https://github.com/MesmerPrism/Quest-Compositor-Lab`. Remote establishment and
-SHA readback remain pending until the checkpoint receipt below is finalized.
+Selected development branch: `main`. Public source remote:
+`https://github.com/MesmerPrism/Quest-Compositor-Lab`.
+The reviewed initial source commit is
+`74065b58696c0fdcf2cc4f5ec1cb652c03135b47`; it was pushed non-force and
+independently observed through GitHub's ref API and Git ls-remote on
+13 November 2026. This continuation is included in the subsequent checkpoint
+commit on main; the exact containing ref is read back and retained in an ignored
+local checkpoint receipt after push.
+
+The initial `codex/neutral-source-milestone` branch is retained at that source
+commit, an ancestor of selected main, with no unmerged source changes. No old
+repository history was imported. CP1 source admission and CP2 independently
+usable neutral host/examples are consolidated here; device qualification and
+optional capture/carrier integration remain future checkpoints.
 
 ## Initial scope
 
@@ -40,7 +50,10 @@ junction rejection and staged Git symlink-mode rejection pass. A configured
 glslc compiler validates all four fragment bodies and their shared vertex;
 the authored desktop ES310 harness links 30 program variants and renders 62
 synthetic cases at unchanged 0.00002 absolute float tolerance. Independent
-review found no remaining P1/P2; final remote selection remains pending. Local raw receipts stay
+review found no remaining P1/P2. The staged file closure and complete one-commit
+source history passed the public boundary check before the initial push.
+All 43 admitted files have license/origin notices; the manifest uses a null
+self-hash and is bound by reviewed Git bytes. Local raw receipts stay
 ignored. No qualified APK or headset runtime is produced by this milestone.
 
 The clean RGB default samples red 0.01 eye-local UV to the right and blue
@@ -48,6 +61,11 @@ The clean RGB default samples red 0.01 eye-local UV to the right and blue
 zero-default gap and passes after the fix. Explicit zero-strength identity
 remains separately tested. Selection paths retain a full digest with compact
 pass filenames so every Android property value fits within 91 bytes.
+
+Dependency pins remain in `docs/AUDIO_SUPPLIER.json` and
+`docs/PROVENANCE.json`; no machine-local resolution is a build dependency.
+No prior usable artifact exists in this new repository. Historical qualified
+APKs and rollback source remain with their original owners, unchanged.
 
 ## Next work and open limits
 
