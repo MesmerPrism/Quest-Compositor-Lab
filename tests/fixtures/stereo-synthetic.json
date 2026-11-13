@@ -1,0 +1,9 @@
+{
+  "source": "independently-authored-synthetic",
+  "width": 24,
+  "height": 8,
+  "left_rgba": [0.1, 0.2, 0.3, 0.4],
+  "right_rgba": [0.9, 0.8, 0.7, 0.6],
+  "random_seed": 431,
+  "host_float_absolute_tolerance": 0.00002
+}

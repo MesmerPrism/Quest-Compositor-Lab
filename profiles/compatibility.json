@@ -1,0 +1,8 @@
+{
+  "schema": "quest.compositor.compatibility.v1",
+  "compatibility_id": "experimental-gles-body-es310",
+  "backend": "gles-body-es310",
+  "maximum_pass_count": 5,
+  "status": "experimental",
+  "qualification": "source-only"
+}

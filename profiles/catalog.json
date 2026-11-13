@@ -1,0 +1,8 @@
+{
+  "schema": "quest.compositor.catalog.v1",
+  "profiles": {
+    "identity": "profiles/identity.json",
+    "blur": "profiles/blur.json",
+    "clean-rgb": "profiles/clean-rgb.json"
+  }
+}

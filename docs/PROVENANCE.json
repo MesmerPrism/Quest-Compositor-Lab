@@ -1,0 +1,278 @@
+{
+  "schema": "quest.compositor.provenance.v1",
+  "intake": {
+    "starter_manifest_sha256": "1da836bb2402bc88b303a0c0426103010e9ff5d8f7987afa66f0a71a94f8803a",
+    "entries_verified": 12,
+    "source_copied": false,
+    "reason": "no standalone license grant; preserved original intake unchanged"
+  },
+  "reference_pins": [
+    {
+      "repository": "https://github.com/MesmerPrism/rusty-quest",
+      "revision": "fb5781031a51bd0709a5941e0a271360b8db49d7",
+      "path": "docs/RGB_CHANNEL_TRANSFORM.md",
+      "git_blob": "7c6b71c561558c7806b5552fb879a79e1a8f5a67",
+      "use": "public configuration semantics only; authored consumer sampling"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "fe3f97f0d7157dfe6df8e64a65c031879754be220e5e95f004274a984eace078",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": ".planning/CONTINUATION.md",
+      "sha256": "7d3f31a95add85d10cb36bddd0391f6c3fa76f6edcccc0a44a0dae10414bc616",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "8f5c67b2d5561aed2c930da4ae7c9b2de63072fa7838713cd34bb687fa89c0e3",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "contracts/audio-envelope-v1.md",
+      "sha256": "ef42b72fdee15f6ba3742a57619517a8fadc86799dd0056a543ae6f08e31418a",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "contracts/compatibility.schema.json",
+      "sha256": "ce56df5a8a1a45d6cfbf93dbe0ee9b214edb1cc78601bfba9fa1f2971daf0d82",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "contracts/profile.schema.json",
+      "sha256": "b393c03f78200581b830f76dbdd44b8e81bc1a4c184b6ae4afb9044b7ba7e174",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "contracts/selection-plan.schema.json",
+      "sha256": "0f30cba13116ff8675373038263be98363d55f10cb83963c2d08b9d3c08f5b9b",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/AUDIO_CARRIER_EXPERIMENT.md",
+      "sha256": "469f2b7e0a07b3ea5e579a037e36fd21c59fd5c34144d6445712e2653223e9a3",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/AUDIO_SUPPLIER.json",
+      "sha256": "a7feaf494ae44549522ac565dc7e098de311d41746192cdc313182bb1f67c966",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "sha256": "c8f4bc9da472a7e5cc4007ebf99a14f40b769c7e1838a0ca0f0e8e0a76c5a58f",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/OPERATOR.md",
+      "sha256": "578ad1e934cf67387230db839c476f5add6d110aa19df1759e36a95230a913b2",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/OWNER_TRANSFER.md",
+      "sha256": "ad7efbd250c7cb9422f25ec820fd16e4016b57f308d09b73b4ac7c8ddddf825f",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/PROFILE_API.md",
+      "sha256": "1ae36b4c223882bf093a3cc13e47654f578f411c67b39fc9b1c883dc55a1d006",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/blur-horizontal.frag.glsl",
+      "sha256": "ff553b759630b871c7f2672f9224c33c0da78ea015a1b69704791a3b29b14996",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/blur-vertical.frag.glsl",
+      "sha256": "1b46f9eee648c9ac918b6654abbd191f818a802afabd235e3481fa6a08befd44",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/clean-rgb.frag.glsl",
+      "sha256": "6fd22d792bab91767753efe7bca57199af3448a17d8c8c1b62443ed683ed2d71",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/fullscreen.vert.glsl",
+      "sha256": "ba727a0bea11054b68ed4d34c8abd4779b9207ed396778e78540d1431f862931",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/identity.frag.glsl",
+      "sha256": "710d3a23186a94c39986b44a5fbe95f8885c2b1b79eb691b7b1213694f462e95",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "a1b718e8b52906860fb2c8645ebffafc6c3d6be6f1298084351fa778b633a72f",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "license": "AGPL-3.0-or-later",
+      "origin": "license text retained byte-exact from MesmerPrism/rusty-quest at fb5781031a51bd0709a5941e0a271360b8db49d7"
+    },
+    {
+      "path": "profiles/blur.json",
+      "sha256": "4cb59a3243c3dd6f274437fba2b69b132cfaccc7239495ceb2e7f32829895e3b",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "profiles/catalog.json",
+      "sha256": "6b5a521deeafc489b82de773ad9593d7e887d9fd0e1e6dce2fab3a834aabafe1",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "profiles/clean-rgb.json",
+      "sha256": "1f886538ebf512323916b22b9f425b3295f91d788f5025d6b5a4be04a988f12e",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "profiles/compatibility.json",
+      "sha256": "763aa88c395e21dd3fbfe93ca1c3eff1abda287126afebcfa9fe97012391d7be",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "profiles/identity.json",
+      "sha256": "9e503ca2122a66665b1cd19fdd8a4445c0a222e27059986e651e631d24bd063f",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "README.md",
+      "sha256": "28325f355fc6aed8b23bbb18d122d4330c1bbdc849ad1b29b1ec283b1776c68d",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "requirements-host.txt",
+      "sha256": "48bdce5971bfe14855aa2a9a4cb16d51ce9e4252478b78a8821aaf0ca7df7890",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/fixtures/carrier-v1.json",
+      "sha256": "3154fa8d202bf141924ba7fbc590bfeb4b0f795dd5171296b6a0db8d756f90d2",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/fixtures/fragment-prefix.glsl",
+      "sha256": "d14040102db12a48bc47cca2ae85bbe12d33cd60e2546239a744133e96583b05",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/fixtures/stereo-synthetic.json",
+      "sha256": "6f7c2c9d74dcf8aa7e7cca15db6af1b9be9c6a3ebb0934f2c298a5af7531d1bc",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/fixtures/vertex-prefix.glsl",
+      "sha256": "e460892fcd3afb7392d351370fc17e143b623b774f38836810bd4fa8b243c155",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/test_carrier_vectors.py",
+      "sha256": "569e0a57c8ba27dec12946f832eb65127fa6b1b4835de2000550bcf466073545",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/test_profiles.py",
+      "sha256": "bc947d3b72de860a243c6c58804c8647807b992e15ffd4f5df90b1d4879d2d99",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/test_public_boundary.py",
+      "sha256": "2950dac745f63d6e3580c5396194d126612980a2ab51dadb3218f9ee804e74f0",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tests/test_shaders.py",
+      "sha256": "4542079c6b373aed2c8f55eb6164c82a23bf5b15ee3397af6829b961631a088f",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "09418cd5fd5a269defeecb23e978d8759eb9492f103138b629867b58d10a2138",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tools/Check-NeutralSource.ps1",
+      "sha256": "309762bc730fd966646f8fcaa5ecc93e3f2d3ae610f924d297e61981beec34ab",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tools/check_public_boundary.py",
+      "sha256": "a289c02fc925353ea88e774030156f868db68856c3a2d97480daca3d3b661aa6",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tools/check_shaders.py",
+      "sha256": "26d412fa7cca874838ce4d47ddcf745f95facbcb9b12fc66a95046f3bf182433",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tools/compositor_profiles.py",
+      "sha256": "cb9b2f9ef3e5d7288a5bc630ccc9833231d53b1be4793746110dbce1e6c117a6",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "tools/shader_reference.py",
+      "sha256": "4141a14d58a923c74db7d915868cbdecb18e5d3a6f5cbd2d4a2f78a963a53499",
+      "license": "AGPL-3.0-or-later",
+      "origin": "independently authored for this repository; no imported source history"
+    },
+    {
+      "path": "docs/PROVENANCE.json",
+      "sha256": null,
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored file inventory; null self-hash avoids recursion; Git content review binds manifest bytes"
+    }
+  ]
+}

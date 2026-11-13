@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:quest:compositor:selection-plan:v1",
+  "title": "Inert compositor selection plan",
+  "$ref": "#/$defs/plan",
+  "$defs": {
+    "plan": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "profile_id", "source_digest", "requested_properties", "clear_unused_indices", "requires_fresh_construction"],
+      "properties": {
+        "schema": {"const": "quest.compositor.selection-plan.v1"},
+        "profile_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{0,63}$"},
+        "source_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "requested_properties": {
+          "type": "object", "additionalProperties": false,
+          "minProperties": 27, "maxProperties": 27,
+          "required": ["debug.oculus.postProcess.enable", "debug.oculus.postprocess.customPrograms"],
+          "properties": {
+            "debug.oculus.postProcess.enable": {"const": "true"},
+            "debug.oculus.postprocess.customPrograms": {"enum": ["1", "2", "3", "4", "5"]}
+          },
+          "patternProperties": {
+            "^debug\\.oculus\\.postprocess\\.(vertexShader|fragmentShader)[0-4]$": {"type": "string", "pattern": "^(|/data/local/tmp/qcl/[0-9a-f]{64}/[0-4]\\.[vf])$"},
+            "^debug\\.oculus\\.postprocess\\.input(Width|Height)[0-4]$": {"type": "string", "pattern": "^(|[1-9][0-9]*)$"},
+            "^debug\\.oculus\\.postprocess\\.inputFilter[0-4]$": {"enum": ["", "linear", "nearest"]}
+          }
+        },
+        "clear_unused_indices": {
+          "enum": [[1, 2, 3, 4], [2, 3, 4], [3, 4], [4], []]
+        },
+        "requires_fresh_construction": {"const": true}
+      },
+      "description": "Source plan only. CLI verify additionally recomputes every value, source hash and selector from current closed inputs."
+    },
+    "artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "profile_path", "stage_root", "plan"],
+      "properties": {
+        "schema": {"const": "quest.compositor.plan-artifact.v1"},
+        "profile_path": {"type": "string", "pattern": "^profiles/[A-Za-z0-9_-][A-Za-z0-9_.-]*\\.json$"},
+        "stage_root": {"const": "/data/local/tmp/qcl"},
+        "plan": {"$ref": "#/$defs/plan"}
+      },
+      "description": "CLI retained artifact; validate using #/$defs/artifact. Save under ROOT/local; profile references resolve from ROOT."
+    }
+  }
+}

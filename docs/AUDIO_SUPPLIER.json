@@ -1,0 +1,38 @@
+{
+  "schema": "quest.compositor.audio-supplier.v1",
+  "owner": "MesmerPrism/rusty-quest",
+  "candidate": "audio-compositor-control-20261106/producer-v2",
+  "status": "pinned ignored supplier candidate; not a published artifact; no ownership transfer",
+  "license": "AGPL-3.0-or-later",
+  "clock_domain": "CLOCK_MONOTONIC",
+  "files": [
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiocontrol/AudioEnvelope.java",
+      "sha256": "73ffc224976eef161838950f7c2f56aee3b74d51462f6693d8446ae14c6fb06c"
+    },
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiocontrol/ExternalEnvelopeAdapter.java",
+      "sha256": "b1d245453df4b5b060d215fd3b4b64c9a073c74f1fcec688e1522f68775888e0"
+    },
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiocontrol/EnvelopePacketView.java",
+      "sha256": "969edc1cbeffc131926b4ba2cb62ed795afa4e00a51598652b126085dcc028fe"
+    },
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiocontrol/ProducerObservation.java",
+      "sha256": "2b30b477cfa747821e362d8d3f40f1ef35052a8932d990e8e72a15975e332562"
+    },
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiofeatures/ContinuousAudioFeatures.java",
+      "sha256": "074fe3d8274d8d3c7d5db459cd698a28095170ffcd33e1c932f2de758448b6ef"
+    },
+    {
+      "path": "src/io/github/mesmerprism/rustyquest/audiofeatures/protocol/ControlPacket.java",
+      "sha256": "402774236308e1de3034c1d12fd6b7becd77c705abb65428e1df9d85f90c9076"
+    }
+  ],
+  "supplier_input_pins_sha256": "b441bf0c28a0c1cfa26fe574fcb8dce9c653828c934ee80202cc70787a587db8",
+  "supplier_build_receipt_sha256": "8c65fbf06c28621615fd47192b414106a95d59f081e8a7ea871bad93721b5ab0",
+  "supplier_source_checks_sha256": "d7056c4d4a4842c2c5e9be7ff7531c64324f09e3ff54cce1cd9b6341d2d80204",
+  "qualification": "prior host receipt reference only; not rerun or a device claim"
+}

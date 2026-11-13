@@ -1,0 +1,17 @@
+{
+  "schema": "quest.compositor.profile.v1",
+  "profile_id": "clean-rgb",
+  "backend": "gles-body-es310",
+  "passes": [
+    {
+      "vertex_path": "examples/fullscreen.vert.glsl",
+      "fragment_path": "examples/clean-rgb.frag.glsl",
+      "vertex_sha256": "ba727a0bea11054b68ed4d34c8abd4779b9207ed396778e78540d1431f862931",
+      "fragment_sha256": "6fd22d792bab91767753efe7bca57199af3448a17d8c8c1b62443ed683ed2d71",
+      "filter": "linear",
+      "width": null,
+      "height": null
+    }
+  ],
+  "compatibility_id": "experimental-gles-body-es310"
+}

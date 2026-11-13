@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:quest:compositor:compatibility:v1",
+  "title": "Source-only experimental compositor compatibility",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "compatibility_id", "backend", "maximum_pass_count", "status", "qualification"],
+  "properties": {
+    "schema": {"const": "quest.compositor.compatibility.v1"},
+    "compatibility_id": {"const": "experimental-gles-body-es310"},
+    "backend": {"const": "gles-body-es310"},
+    "maximum_pass_count": {"type": "integer", "minimum": 1, "maximum": 5},
+    "status": {"const": "experimental"},
+    "qualification": {"const": "source-only"}
+  }
+}

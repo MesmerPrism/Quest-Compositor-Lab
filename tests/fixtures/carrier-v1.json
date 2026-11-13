@@ -1,0 +1,69 @@
+{
+  "schema": "quest.compositor.carrier-vectors.v1",
+  "vectors": [
+    {
+      "name": "constant128-before-wrap",
+      "hex": "b65a11ff8080808000002a8d",
+      "draw_sequence": 255,
+      "level_bytes": [
+        128,
+        128,
+        128,
+        128
+      ],
+      "phase_bytes": [
+        0,
+        0
+      ],
+      "valid": true
+    },
+    {
+      "name": "constant128-after-wrap",
+      "hex": "b65a11008080808000002a56",
+      "draw_sequence": 0,
+      "level_bytes": [
+        128,
+        128,
+        128,
+        128
+      ],
+      "phase_bytes": [
+        0,
+        0
+      ],
+      "valid": true
+    },
+    {
+      "name": "endpoints",
+      "hex": "b65a110100ff00ff00ff2a2c",
+      "draw_sequence": 1,
+      "level_bytes": [
+        0,
+        255,
+        0,
+        255
+      ],
+      "phase_bytes": [
+        0,
+        255
+      ],
+      "valid": true
+    },
+    {
+      "name": "invalid-neutral",
+      "hex": "b65a10020000000000002ac9",
+      "draw_sequence": 2,
+      "level_bytes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase_bytes": [
+        0,
+        0
+      ],
+      "valid": false
+    }
+  ]
+}

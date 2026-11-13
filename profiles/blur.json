@@ -1,0 +1,35 @@
+{
+  "schema": "quest.compositor.profile.v1",
+  "profile_id": "blur",
+  "backend": "gles-body-es310",
+  "passes": [
+    {
+      "vertex_path": "examples/fullscreen.vert.glsl",
+      "fragment_path": "examples/blur-horizontal.frag.glsl",
+      "vertex_sha256": "ba727a0bea11054b68ed4d34c8abd4779b9207ed396778e78540d1431f862931",
+      "fragment_sha256": "ff553b759630b871c7f2672f9224c33c0da78ea015a1b69704791a3b29b14996",
+      "filter": "linear",
+      "width": null,
+      "height": null
+    },
+    {
+      "vertex_path": "examples/fullscreen.vert.glsl",
+      "fragment_path": "examples/blur-vertical.frag.glsl",
+      "vertex_sha256": "ba727a0bea11054b68ed4d34c8abd4779b9207ed396778e78540d1431f862931",
+      "fragment_sha256": "1b46f9eee648c9ac918b6654abbd191f818a802afabd235e3481fa6a08befd44",
+      "filter": "linear",
+      "width": null,
+      "height": null
+    },
+    {
+      "vertex_path": "examples/fullscreen.vert.glsl",
+      "fragment_path": "examples/identity.frag.glsl",
+      "vertex_sha256": "ba727a0bea11054b68ed4d34c8abd4779b9207ed396778e78540d1431f862931",
+      "fragment_sha256": "710d3a23186a94c39986b44a5fbe95f8885c2b1b79eb691b7b1213694f462e95",
+      "filter": "linear",
+      "width": null,
+      "height": null
+    }
+  ],
+  "compatibility_id": "experimental-gles-body-es310"
+}
