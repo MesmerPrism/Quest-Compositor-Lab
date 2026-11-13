@@ -198,5 +198,12 @@ review passed with no findings. All 81 other prior inputs were verified
 byte-identical; no test suite or graphics/device probe was rerun. The source
 branch is `codex/wide-consumer-seams-guide`, based on retained main
 `97d7152f2624a29e5b00a5b9c24d3d3b4ccdb281`. No carrier/shared source or running
-inspection is modified. The guide will consolidate to main with a reviewed
-source checkpoint and exact remote readback.
+inspection is modified. The reviewed guide source commit is
+`56978513304528bc4ea2c70a375f2b6e07384205`. It was fast-forwarded to main,
+pushed non-force and independently observed through GitHub's ref API and Git
+ls-remote on 13 November 2026. The new snapshot passed source closure; the six
+exact immutable ancestor verdicts were reused under the unchanged boundary
+gate. There are 86 admitted files with all previous notices/pins preserved and
+two additional public AOSP references. The source branch remains a retained
+ancestor of main's following continuation checkpoint. Its final containing ref
+and exact readbacks are recorded in ignored `local/CHECKPOINT-CONSUMER-GUIDE.json`.
