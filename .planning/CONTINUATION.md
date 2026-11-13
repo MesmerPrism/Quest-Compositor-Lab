@@ -150,10 +150,15 @@ source hashes/Git blobs and 12 shader/fixture/reference/harness inputs were
 verified unchanged against their pinned public revisions. No unchanged sink
 suite was rerun. Independent integration review passed public admission with no
 actionable findings: exact import/dependency joins, 85 notices, narrow namespace
-admission, staged closure and documentation all passed. The reviewed source
-branch is `codex/finite-controller-source`, based on the retained b83e327
-checkpoint; it will converge to main through a normal fast-forward and a
-non-force verified checkpoint.
+admission, staged closure and documentation all passed. The reviewed
+source commit is `1836fdd93d3360760e5e6d364a82f39ffbee1246`, based on the
+retained b83e327 checkpoint. It was fast-forwarded to selected main, pushed
+non-force, and independently observed through the GitHub ref API and Git
+ls-remote on 13 November 2026. All five reachable snapshots passed source
+clearance before that push. `codex/finite-controller-source` remains at the
+reviewed source commit as an ancestor of main's subsequent continuation commit,
+with no unmerged source. The ignored `local/CHECKPOINT-CONTROLLER.json` records
+the exact final containing ref and readbacks after the continuation push.
 Temporary operator instructions forbid foreground probes. Shader/driver checks
 will not be relaunched; prior evidence can be reused only for exact unchanged
 shader, prefix, fixture, reference and compiler-harness bytes, verified explicitly.
