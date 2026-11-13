@@ -33,6 +33,32 @@ class BoundaryTests(unittest.TestCase):
     def test_reviewed_closure_passes(self):
         self.assertEqual([], check(self.root))
 
+    def test_java_is_admitted_only_in_reviewed_capture_source_locations(self):
+        for name in ('adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java',
+                     'adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java',
+                     'adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java',
+                     'examples/wide-stereo-source/IdentitySinkExample.java'):
+            self.files[name] = b'// reviewed synthetic Java fixture\n'
+        self.write()
+        self.assertEqual([], check(self.root))
+
+    def test_java_elsewhere_and_compiled_classes_remain_excluded(self):
+        for name in ('elsewhere/Example.java', 'examples/wide-stereo-source/Other.java',
+                     'adapters/capture-bridge/src/main/java/foreign/Example.java',
+                     'adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/Example.class'):
+            self.files[name] = b'forbidden even when manifest-listed\n'
+        self.write()
+        failures = check(self.root)
+        for name in set(self.files) - {'README.md'}:
+            self.assertIn('unsupported public payload: ' + name, failures)
+
+    def test_capture_java_still_requires_explicit_file_notice(self):
+        name = 'adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java'
+        target = self.root / name
+        target.parent.mkdir(parents=True)
+        target.write_text('// not reviewed')
+        self.assertIn('unadmitted file: ' + name, check(self.root))
+
     def test_unreviewed_file_rejected(self):
         (self.root / 'surprise.txt').write_text('unreviewed')
         self.assertTrue(any('unadmitted' in e for e in check(self.root)))

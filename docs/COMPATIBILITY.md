@@ -31,3 +31,10 @@ abrupt carrier-driven gain and optical-grid visibility remain unresolved.
 
 Capture lifetime/permissions and any future Shell adapter have a separate owner.
 No vendor AIDL, firmware dump, capture operation or device mutation is included.
+
+The neutral capture sink module supplies a local 19-word descriptor and
+app-side callback/image/fence accounting. Its Android Binder classes are only
+API-compiled here; Shell/DUMP enforcement, Surface transfer, Binder death and
+Service lifecycle need real runtime evidence. Local retirement is not a vendor
+retirement acknowledgment. This module does not provide global capture-idle,
+peer quiescence, output exclusion, live pixels or restart qualification.

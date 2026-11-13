@@ -44,7 +44,7 @@ remain with their existing owners. No runtime, ADB or headset action occurred.
 
 ## Evidence and checkpoint
 
-Integrated tests currently run 37 cases: 36 pass and one Windows symlink-creation
+The initial source milestone ran 37 cases: 36 pass and one Windows symlink-creation
 case is skipped because the host cannot create that link. Real directory
 junction rejection and staged Git symlink-mode rejection pass. A configured
 glslc compiler validates all four fragment bodies and their shared vertex;
@@ -52,7 +52,7 @@ the authored desktop ES310 harness links 30 program variants and renders 62
 synthetic cases at unchanged 0.00002 absolute float tolerance. Independent
 review found no remaining P1/P2. The staged file closure and complete one-commit
 source history passed the public boundary check before the initial push.
-All 43 admitted files have license/origin notices; the manifest uses a null
+All initial 43 admitted files have license/origin notices; the manifest uses a null
 self-hash and is bound by reviewed Git bytes. Local raw receipts stay
 ignored. No qualified APK or headset runtime is produced by this milestone.
 
@@ -69,8 +69,8 @@ APKs and rollback source remain with their original owners, unchanged.
 
 ## Next work and open limits
 
-Consume the separately reviewed capture adapter only after its owner delivers
-a neutral file closure. The private backend consumes this public selection
+The capture sink closure is now admitted as described below; actual consumer
+and native integration remain separate work. The private backend consumes this public selection
 interface through its own adapter. It retains the known private comparison
 failure and its own alpha/clock semantics; no parity is inferred here.
 
@@ -81,3 +81,41 @@ without the optical path. Future attended device work needs separate target,
 compatibility, resource ownership, fresh construction and exact restore evidence.
 
 No exclusive machine resources were acquired; no device handoff is pending.
+
+## Neutral capture sink source integration
+
+The exact 21-file `neutral-capture-sink-export02` closure was admitted after
+independent source/public review and a scoped documentation rereview.
+Delivery SHA-256:
+`8205484361fa7b14811ff2c7e4b9a792e8e31d1add7bba3d40334a44a9bfaaa0`.
+No recursive payload copy, generated class, vendor binary, raw receipt or old
+Git history entered this repository. Existing provenance entries were retained;
+21 file notices and three exact upstream references were appended.
+
+The destination admission change adds Java only under the capture namespace and
+the exact inert identity example, with positive and negative tests. Compiled
+classes, Java elsewhere and unlisted sources remain excluded. The adapter owns
+its local descriptor/Binder contract and app-side generation/admission counters;
+it does not create the reader, control capture, own a native queue or grant
+global restart authority. Generic audio supplier ownership remains unchanged.
+
+Destination verification passed all three pure Java suites, warning-free
+compilation of eight production classes against Android API 34, and compile/run
+of the inert identity fixture. The selected SDK jar SHA-256 is
+`6cea1df3efb77103ac3e2beb9bf4718964b0e0869ab16d39d29d5cbae1c147ad`;
+it is an external test input and is not shipped. The maintained shader/compiler
+gate still passes 30 linked synthetic programs and 62 render cases; the Python
+suite runs 40 tests, 39 pass with the same one host symlink-creation skip.
+
+Independent integration review passed with no actionable findings, including
+all 21 exact imported hashes, additive 64-file provenance, narrow Java
+admission, pure Java suites, links and public boundary checks.
+The selected integration branch `codex/capture-sink-contract` is based on
+`17b9d45ce9d9b02ccf3f4765a80979ba430b7a8a`. Reviewed source will converge
+to main through an ordinary fast-forward and a non-force remote checkpoint.
+Exact containing refs/readbacks live in the ignored checkpoint receipt.
+
+No Binder/Surface/Service runtime, capture controller, peer protocol, actual
+native frame, output exclusion, scanout, restart, sustained/moving use or wearer
+acceptance is qualified by this source slice. App-side drain is never relabelled
+vendor/global capture retirement. No device or exclusive build resource is used.

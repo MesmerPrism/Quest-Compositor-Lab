@@ -1,0 +1,165 @@
+{
+  "schema": "quest.compositor.capture_bridge.provenance.v1",
+  "status": "source-only-unadopted",
+  "reference_pins": [
+    {
+      "id": "quest-sink-contract",
+      "repository": "https://github.com/MesmerPrism/rusty-quest",
+      "revision": "5e688702c96a0bda4a6dadd5cdc3e9ab1f45fcb8",
+      "path": "apps/native-renderer-android/src/diagnosticMetaInput/java/io/github/mesmerprism/rustyquest/NativeMetaInputContract.java",
+      "git_blob": "6356c0f3c988e2f3e54040453ef025b986cabdfc",
+      "sha256": "05d6d597cb5f2ca6eefeb461f193694c2f65475691a38efb99bde2524fbc6f88",
+      "license": "AGPL-3.0-or-later",
+      "use": "Surface snapshot/generation contract reference only; narrow neutral successor authored; diagnostic modes/witness semantics not copied"
+    },
+    {
+      "id": "quest-sink-service",
+      "repository": "https://github.com/MesmerPrism/rusty-quest",
+      "revision": "5e688702c96a0bda4a6dadd5cdc3e9ab1f45fcb8",
+      "path": "apps/native-renderer-android/src/diagnosticMetaInput/java/io/github/mesmerprism/rustyquest/NativeMetaInputSurfaceService.java",
+      "git_blob": "3f42346b2be48fa429fb911389758af4cf90e8ca",
+      "sha256": "3d0b02d3aebf0d90e7a05454e3611b16b59387185288399705abbe15341d216a",
+      "license": "AGPL-3.0-or-later",
+      "use": "Shell/synchronous/closed-field/current-generation guard reference; explicit per-call DUMP and neutral ownership authored"
+    },
+    {
+      "id": "quest-license",
+      "repository": "https://github.com/MesmerPrism/rusty-quest",
+      "revision": "5e688702c96a0bda4a6dadd5cdc3e9ab1f45fcb8",
+      "path": "LICENSE",
+      "git_blob": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "license": "AGPL-3.0-or-later",
+      "use": "Verbatim license text only"
+    }
+  ],
+  "source_reference_policy": "References were read at exact revision/blob/SHA-256. Narrow new neutral classes are authored; only LICENSE is copied byte-exact. No original diagnostic Java file, effect mode, private shader, vendor binary or headset evidence is exported.",
+  "files": [
+    {
+      "path": "adapters/capture-bridge/.gitignore",
+      "sha256": "94e8e70ea7f42be858f927964c68ef42501f2bc6509708d53baa01486a5f58fa",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/CONTRACT.md",
+      "sha256": "38280fce9dc6b3bbefe33210b6400fffc12ea2f75b0a5c88ee506c91cd27f229",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "license": "AGPL-3.0-or-later",
+      "origin": "verbatim AGPL license text from quest-license reference"
+    },
+    {
+      "path": "adapters/capture-bridge/PROVENANCE.json",
+      "sha256": null,
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored local source inventory; null self hash avoids recursion; destination global provenance/delivery manifest binds these bytes"
+    },
+    {
+      "path": "adapters/capture-bridge/README.md",
+      "sha256": "8719911725c0ef59d36b5931c09503570a7d2941d771bc1ee077a112a3d8be94",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/TEST-RESULTS.md",
+      "sha256": "c8ed1e014b7312436a8996ab339358fcfabfee838fa05e1d26050fc4358be56d",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/run_tests.py",
+      "sha256": "4b4cfabbc9433cf1c60b78be147d5f320774807a30a0486e02c6c5edb3f8f544",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/SinkPublisherOwner.java",
+      "sha256": "038033a5cb8c53a645cc2f4eca86762e63a778d645429ce77e794fecec582726",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/StereoSinkPublisher.java",
+      "sha256": "f55011c8fd172999f012676c07f28eb4be39d5ec9dde0ffabd70c62c52203d87",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/StereoSinkPublisherService.java",
+      "sha256": "6422039c6bfecb5423275890a0038de3054ed386eb1a1d4f5ce81260dc1dff21",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/PublisherAccess.java",
+      "sha256": "1a21435073ee859b2a11bc1ecc6ccaff99677e177d74473257ec5fe73722b356",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/PublisherBinding.java",
+      "sha256": "13711434ed15764fcdc93865d1734a58c3b28ef9f73b5bb7e6042792834f8515",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/SinkAdmission.java",
+      "sha256": "5bed0b6bf8e87bfc88341f184240b8e83af734769f9a13949ea079b3dc2ffa23",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/SinkStatus.java",
+      "sha256": "baa043c527fe0d9aa16ada11deed9ad53be19342547555a265b45b73e23fbd88",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/StereoSinkDescriptor.java",
+      "sha256": "07c640ececc9af25510051c69ce84af5875f817edc4dcdc5ebe8782cc717fedf",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored narrow neutral contract informed by quest-sink-contract and quest-sink-service references; no diagnostic mode, private formula, witness semantics or imported history"
+    },
+    {
+      "path": "adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/PublisherAccessTest.java",
+      "sha256": "c89f659fde5c2b865bfbada6378ebe6caa61648e601c700140d06b8593a8f545",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/SinkAdmissionTest.java",
+      "sha256": "c49fe9687544ed2c6d9d512c0c5661ec0a2277a1fe320cb9a19e1ff1ea757445",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/StereoSinkDescriptorTest.java",
+      "sha256": "192d18d98927ba2cfd47b5883b743ceb90974c7f5e9521e371836ac1769cf545",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/TestSupport.java",
+      "sha256": "63a6821269044bc7cd82c945511adde792100a1c34a1d9921a89c7b3d41b7a4a",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "examples/wide-stereo-source/IdentitySinkExample.java",
+      "sha256": "ce162babedf9ac6c9ee99fd10bdcadbb2e1893ba21fa5a260c33f6c01491fbd4",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    },
+    {
+      "path": "examples/wide-stereo-source/README.md",
+      "sha256": "a2d30c2bb98ec00b2800978161f4a577f1ac1d1958a9fb976fa2ebe1a07e34ee",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored for the neutral sink contract; no imported source history"
+    }
+  ]
+}

@@ -14,6 +14,12 @@ FORBIDDEN_NAME = re.compile(r'(private.effect|raw.headset|raw.device|prepared.fi
 MACHINE_PATH = re.compile(r'(?<![A-Za-z0-9])[A-Za-z]:[\\/]|/(?:Users|home)/[A-Za-z0-9]')
 ALLOWED_SUFFIXES = {'.md', '.json', '.py', '.ps1', '.glsl', '.txt'}
 SPECIAL_NAMES = {'.gitignore', '.gitattributes', 'LICENSE'}
+JAVA_SOURCE_PREFIXES = (
+    'adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/',
+    'adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/',
+    'adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/',
+)
+JAVA_EXAMPLE = 'examples/wide-stereo-source/IdentitySinkExample.java'
 
 
 def check(root: Path) -> list[str]:
@@ -74,7 +80,9 @@ def check(root: Path) -> list[str]:
                     errors.append(f'unadmitted file: {name}')
                 if FORBIDDEN_NAME.search(name):
                     errors.append(f'excluded payload name: {name}')
-                if item.name not in SPECIAL_NAMES and item.suffix not in ALLOWED_SUFFIXES:
+                neutral_java = item.suffix == '.java' and (
+                    name.startswith(JAVA_SOURCE_PREFIXES) or name == JAVA_EXAMPLE)
+                if item.name not in SPECIAL_NAMES and item.suffix not in ALLOWED_SUFFIXES and not neutral_java:
                     errors.append(f'unsupported public payload: {name}')
                 data = item.read_bytes()
                 try:

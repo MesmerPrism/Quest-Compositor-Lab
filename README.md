@@ -9,6 +9,20 @@ an APK, a native-loader adoption result or headset/wearer qualification. The
 whole-composite input includes application/UI content. See
 [compatibility](docs/COMPATIBILITY.md) before interpreting results.
 
+The experimental [capture sink adapter](adapters/capture-bridge/README.md)
+defines an app-owned stereo Surface descriptor, a Shell-only Binder boundary
+and app-side lifecycle accounting. It does not start capture or supply a native
+reader, renderer or global restart authority. Its
+[inert example](examples/wide-stereo-source/README.md) creates no media resource.
+Java 17 can run its three pure suites and optional pinned Android SDK compilation:
+
+```text
+python adapters/capture-bridge/run_tests.py --suite all
+```
+
+Android compilation additionally requires an explicitly selected SDK jar as
+documented by the adapter. It does not execute Android runtime behavior.
+
 Python 3.12 or newer runs the core tooling without third-party packages.
 The full test suite includes numerical and GPU cases and needs NumPy,
 PyOpenGL and a suitable Windows GL driver. Tested versions are pinned

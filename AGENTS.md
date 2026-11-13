@@ -14,6 +14,12 @@ Run `python -m unittest discover -s tests -v`,
 `python tools/check_public_boundary.py`, `git diff --check` and the configured
 shader compile fixture before a source milestone. Keep generated results under
 ignored `local/`. No tool in this repository applies device properties.
+For capture-sink changes also run its `run_tests.py --suite all`, compile the
+Android source against an explicitly selected SDK jar, and compile/run the inert
+identity example. Java admission is limited to the declared capture namespace
+and exact identity example; every file still needs an explicit provenance row.
+The module owns only its sink ABI/app-side accounting. Capture controllers,
+native image/queue lifetime and global restart admission remain consumer-owned.
 
 Workstream integrator selects branches/remotes and stages scoped files. Other
 workers own assigned files only and must preserve other workers' changes.
