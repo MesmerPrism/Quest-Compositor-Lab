@@ -110,10 +110,15 @@ suite runs 40 tests, 39 pass with the same one host symlink-creation skip.
 Independent integration review passed with no actionable findings, including
 all 21 exact imported hashes, additive 64-file provenance, narrow Java
 admission, pure Java suites, links and public boundary checks.
-The selected integration branch `codex/capture-sink-contract` is based on
-`17b9d45ce9d9b02ccf3f4765a80979ba430b7a8a`. Reviewed source will converge
-to main through an ordinary fast-forward and a non-force remote checkpoint.
-Exact containing refs/readbacks live in the ignored checkpoint receipt.
+The reviewed source commit is
+`fa68038e75e7175511f9a9f68c041cb321e7fa5e`, based on the retained
+`17b9d45ce9d9b02ccf3f4765a80979ba430b7a8a` checkpoint. It was fast-forwarded
+to selected main, pushed non-force and independently observed through GitHub's
+ref API and Git ls-remote on 13 November 2026. All three reachable source
+snapshots passed public closure before that push. The source branch
+`codex/capture-sink-contract` remains at that commit as an ancestor of main's
+subsequent continuation checkpoint, with no unmerged source. Exact final
+containing refs/readbacks are retained in ignored `local/CHECKPOINT-CAPTURE-SINK.json`.
 
 No Binder/Surface/Service runtime, capture controller, peer protocol, actual
 native frame, output exclusion, scanout, restart, sustained/moving use or wearer
