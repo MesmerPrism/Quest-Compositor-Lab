@@ -18,6 +18,9 @@ JAVA_SOURCE_PREFIXES = (
     'adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/',
     'adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/',
     'adapters/capture-bridge/tests/java/io/github/mesmerprism/questcompositor/capturebridge/',
+    'adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/',
+    'adapters/capture-bridge/controller/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/controller/',
+    'adapters/capture-bridge/controller/tests/java/io/github/mesmerprism/questcompositor/capturebridge/controller/',
 )
 JAVA_EXAMPLE = 'examples/wide-stereo-source/IdentitySinkExample.java'
 

@@ -23,6 +23,13 @@ python adapters/capture-bridge/run_tests.py --suite all
 Android compilation additionally requires an explicitly selected SDK jar as
 documented by the adapter. It does not execute Android runtime behavior.
 
+The [finite controller source](adapters/capture-bridge/controller/README.md)
+adds typed orchestration for one original invocation and conservative unknown
+custody. Its real firmware vendor and durable external-custody providers are
+absent, so the public Android entry fails closed. It is not a working capture
+distribution or device execution recipe. Its own tests compile the pinned sink
+source as a dependency without copying it or rerunning unchanged sink suites.
+
 Python 3.12 or newer runs the core tooling without third-party packages.
 The full test suite includes numerical and GPU cases and needs NumPy,
 PyOpenGL and a suitable Windows GL driver. Tested versions are pinned

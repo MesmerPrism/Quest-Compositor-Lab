@@ -124,3 +124,45 @@ No Binder/Surface/Service runtime, capture controller, peer protocol, actual
 native frame, output exclusion, scanout, restart, sustained/moving use or wearer
 acceptance is qualified by this source slice. App-side drain is never relabelled
 vendor/global capture retirement. No device or exclusive build resource is used.
+
+## Neutral finite controller source integration
+
+Admitted exactly 21 reviewed `neutral-finite-controller-export02` files, delivery
+SHA-256 `a2b73e6c51baee2ea1d44b7d29e3e8237381696ac834dca3f36c7f10f5da4b6e`.
+The independent scoped rereview passed source, quality and restricted-content
+checks after final-decision/expiry/death and Looper-bootstrap regressions were
+fixed. Root notices preserve the prior 64-file inventory and append 21 entries.
+No private source/history, firmware/device pin, binary or generated output was
+copied. Authorship is informed by retained private patterns without a clean-room
+claim. Existing generic audio ownership is unchanged.
+
+The controller retains the exact eight-file sink dependency from source
+`fa68038e75e7175511f9a9f68c041cb321e7fa5e` and selected public checkpoint
+`b83e3278cc6ef41765b8457bcc29eaf4b515ec62`; no duplicate sink source or unchanged
+sink test run is introduced. Java admission is restricted to the controller's
+main/android/tests namespace, with explicit file notices still mandatory.
+
+Fresh destination verification passed two real Java controller suites, four
+offline controller Python tests and strict API34 compilation. The root headless
+selection ran 41 tests: 40 passed with the existing Windows link-creation skip.
+The one actual graphics test was deliberately not launched. The eight sink
+source hashes/Git blobs and 12 shader/fixture/reference/harness inputs were
+verified unchanged against their pinned public revisions. No unchanged sink
+suite was rerun. Independent integration review passed public admission with no
+actionable findings: exact import/dependency joins, 85 notices, narrow namespace
+admission, staged closure and documentation all passed. The reviewed source
+branch is `codex/finite-controller-source`, based on the retained b83e327
+checkpoint; it will converge to main through a normal fast-forward and a
+non-force verified checkpoint.
+Temporary operator instructions forbid foreground probes. Shader/driver checks
+will not be relaunched; prior evidence can be reused only for exact unchanged
+shader, prefix, fixture, reference and compiler-harness bytes, verified explicitly.
+All spawned verification helpers are hidden. No user question or device launch
+is needed for this source-only integration.
+
+The real vendor provider and durable original host/process/pipe custody recorder
+remain absent. Public execution fails closed. Source tests do not prove actual
+Android Shell/reflection/permissions, Binder/Surface/death, native capture or
+vendor ACK, app drain, global idle/restart, held review, media or presentation.
+One original invocation/worker and conservative unknown custody are source
+semantics, not native ownership fences or a successful runtime result.

@@ -40,3 +40,14 @@ the diagnostic Java files, effect modes and Git history were not imported.
 Only the module LICENSE is retained byte-exact. Global provenance also binds
 the nested inventory bytes. SDK jars, generated classes and private review
 receipts are excluded from source publication.
+
+The finite controller was admitted as 21 exact AGPL-3.0-or-later files from
+`neutral-finite-controller-export02`, delivery SHA-256
+`a2b73e6c51baee2ea1d44b7d29e3e8237381696ac834dca3f36c7f10f5da4b6e`.
+Its [provenance](adapters/capture-bridge/controller/PROVENANCE.json) truthfully
+describes new source informed by retained private implementation patterns,
+without a clean-room claim or invented private-source license/revision. No
+retained private text, identities, profile values, effects or history is imported.
+The [sink inventory](adapters/capture-bridge/controller/SINK-DEPENDENCY.json)
+pins eight existing public source files; the controller does not duplicate them.
+The real vendor and durable original-custody providers are intentionally absent.

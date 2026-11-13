@@ -30,7 +30,8 @@ attachments. Shader temporal smoothing cannot be assumed. Existing tearing,
 abrupt carrier-driven gain and optical-grid visibility remain unresolved.
 
 Capture lifetime/permissions and any future Shell adapter have a separate owner.
-No vendor AIDL, firmware dump, capture operation or device mutation is included.
+No vendor AIDL or firmware dump is supplied. No actual capture operation or
+device mutation was performed by these source checks.
 
 The neutral capture sink module supplies a local 19-word descriptor and
 app-side callback/image/fence accounting. Its Android Binder classes are only
@@ -38,3 +39,11 @@ API-compiled here; Shell/DUMP enforcement, Surface transfer, Binder death and
 Service lifecycle need real runtime evidence. Local retirement is not a vendor
 retirement acknowledgment. This module does not provide global capture-idle,
 peer quiescence, output exclusion, live pixels or restart qualification.
+
+The finite controller source preserves one original worker and conservative
+unknown Start/Stop custody through typed ports. The public provider is absent
+and fails closed. Decision-time validation is a local authorization fact; it
+cannot freeze external state before a vendor call or provide a native ownership
+fence. Its planner and terminal validator are inert declarations, not process
+observations. Real Shell/bootstrap/Binder behavior, durable external custody,
+vendor ACK, app drain, restart, held review and presentation remain unqualified.

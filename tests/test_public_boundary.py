@@ -59,6 +59,28 @@ class BoundaryTests(unittest.TestCase):
         target.write_text('// not reviewed')
         self.assertIn('unadmitted file: ' + name, check(self.root))
 
+    def test_controller_java_requires_exact_neutral_namespace(self):
+        for folder in ('src/main/java', 'src/android/java', 'tests/java'):
+            name = 'adapters/capture-bridge/controller/' + folder + '/io/github/mesmerprism/questcompositor/capturebridge/controller/Fixture.java'
+            self.files[name] = b'// reviewed controller fixture\n'
+        self.write()
+        self.assertEqual([], check(self.root))
+
+    def test_controller_siblings_binaries_and_unlisted_java_stay_excluded(self):
+        namespace = 'adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/'
+        for name in (namespace + 'foreign/Example.java', namespace + 'controller2/Example.java',
+                     namespace + 'controller/Example.class'):
+            self.files[name] = b'not admitted as public Java\n'
+        self.write()
+        failures = check(self.root)
+        for name in set(self.files) - {'README.md'}:
+            self.assertIn('unsupported public payload: ' + name, failures)
+        unlisted = namespace + 'controller/Unlisted.java'
+        target = self.root / unlisted
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text('// unreviewed')
+        self.assertIn('unadmitted file: ' + unlisted, check(self.root))
+
     def test_unreviewed_file_rejected(self):
         (self.root / 'surprise.txt').write_text('unreviewed')
         self.assertTrue(any('unadmitted' in e for e in check(self.root)))

@@ -1,0 +1,161 @@
+{
+  "schema": "quest.capture.controller.provenance.v1",
+  "status": "source-only-controller-successor-pending-scoped-rereview",
+  "authorship": "Authored informed by retained private implementation patterns. No clean-room claim is made. Retained private Java/Python text was not copied and no private-source license or Git revision is invented. New authored code is AGPL-3.0-or-later by the selected source authorization.",
+  "exclusions": [
+    "retained private source text and source/profile/run pin tables",
+    "vendor APK/native/AIDL/code and firmware identity defaults",
+    "private effects/modes/witness workflows and named private products",
+    "actual device/process/capture evidence and machine paths"
+  ],
+  "public_sink_dependency": {
+    "repository": "https://github.com/MesmerPrism/Quest-Compositor-Lab",
+    "selected_public_main_revision": "b83e3278cc6ef41765b8457bcc29eaf4b515ec62",
+    "source_revision": "fa68038e75e7175511f9a9f68c041cb321e7fa5e",
+    "inventory": "adapters/capture-bridge/controller/SINK-DEPENDENCY.json",
+    "copied_source": false,
+    "license": "AGPL-3.0-or-later",
+    "license_path": "adapters/capture-bridge/LICENSE"
+  },
+  "runtime_gaps": {
+    "real_vendor_provider_implemented": false,
+    "durable_external_custody_recorder_implemented": false,
+    "public_default_provider": "absent-fails-closed",
+    "android_runtime_executed": false
+  },
+  "files": [
+    {
+      "path": "adapters/capture-bridge/controller/.gitignore",
+      "sha256": "94e8e70ea7f42be858f927964c68ef42501f2bc6509708d53baa01486a5f58fa",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/CONTRACT.md",
+      "sha256": "89fe226c9a5779645095ff05bb8ef4e2584eb344b0f54451f61d1eaf88027dfd",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/INTEGRATION.md",
+      "sha256": "5829e4b312e313f80576ae674f2644bbebdd6306d6bbbc3606b8e0cd50313921",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/PROVENANCE.json",
+      "sha256": null,
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored per-file inventory; null self hash avoids recursion; exact delivery/adopted global manifest binds these bytes"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/README.md",
+      "sha256": "76d7caf118ff65387de487d99406f35ab928f3212932398982a1e6994ab3eff6",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/SINK-DEPENDENCY.json",
+      "sha256": "e479e7f9ed0260f6c4651069405dd95cdffc749091e59094a321917243b556d7",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/TEST-RESULTS.md",
+      "sha256": "abe07cd8265af6bc488ab5edb8560e0689c863e3233b6eca523ecaa0722503eb",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/controller_plan.py",
+      "sha256": "f199fbddc3285ae2cbef39ee7e15713b61940f40e255abd450c9b2f93fec5237",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/run_tests.py",
+      "sha256": "d0e253ade853efed03f09d8b3b4d33bde3aa326d104f49c2ea6b1bf09670967d",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/controller/FiniteShellController.java",
+      "sha256": "1cb185da01b6ca2885bc7aa108b0f2a5712571e06f6b1e8d3f81884fba1fe151",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/controller/GenuineShellApplication.java",
+      "sha256": "307690bcbb4230e510217b0e1d850bd8b6accaba050f88b2c643999980989857",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/controller/NeutralPublisherClient.java",
+      "sha256": "5ec4b6e841ea5e1fb0075d01b086fa09e019046fe7719a600e4bad2ca69abba5",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/CaptureAdmission.java",
+      "sha256": "e5fa1621757de59e2a7f5cd285fa24389d9979d052c758b182d7fa9f2ff9c297",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/CaptureAttempt.java",
+      "sha256": "ae7e8ca6f7f9acd3ddb75aaf1813348d287666282325bb6607317db9975126ce",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/CapturePorts.java",
+      "sha256": "df1bcfddb1ef7633402c4cc9f2397d191bcb8dad38b7846777f10a239ed250e5",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/ControllerStatus.java",
+      "sha256": "bf9a31507bcef7c2db8fd6a307142cbd23d02478d2d2f0ba13d1c51610f788f3",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/controller/FiniteCaptureController.java",
+      "sha256": "4e85d097f786620f61ec0deaadbbba1ad969817b99529c063c266c017acf0742",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/tests/java/io/github/mesmerprism/questcompositor/capturebridge/controller/CaptureAttemptTest.java",
+      "sha256": "81bcb4e4ed223fac22df8b21cd05224ef37166abe106ea6713f284eeedaefa40",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/tests/java/io/github/mesmerprism/questcompositor/capturebridge/controller/FiniteCaptureControllerTest.java",
+      "sha256": "aa5e40370d211c956dd0f4011d624a7708d2a218fb02f111daa3c18cc18e5d5e",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/tests/java/io/github/mesmerprism/questcompositor/capturebridge/controller/Fixture.java",
+      "sha256": "ff0a06b3cde56dc20cde313f7cec92c1aadc011fe93ad8f0f377d410fa77c764",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    },
+    {
+      "path": "adapters/capture-bridge/controller/tests/test_controller_plan.py",
+      "sha256": "752f41dbff908dd7e34293806f2b06776bb39e63b6314c0f628e73494c7ccee9",
+      "license": "AGPL-3.0-or-later",
+      "origin": "new neutral code/tests/docs authored informed by retained private implementation patterns; no retained private text, profile pins, effects, identities or history imported"
+    }
+  ],
+  "source_revision_summary": {
+    "scope": [
+      "serialized final owner/time/invalidation decision with attempt marker",
+      "prepare/reuse coordinator Looper before framework Application bootstrap"
+    ],
+    "authority_limits": "Local sampled decision boundary only; no external/native atomic fence or qualified Android/runtime provider is asserted."
+  }
+}

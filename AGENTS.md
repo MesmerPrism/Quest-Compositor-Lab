@@ -18,8 +18,13 @@ For capture-sink changes also run its `run_tests.py --suite all`, compile the
 Android source against an explicitly selected SDK jar, and compile/run the inert
 identity example. Java admission is limited to the declared capture namespace
 and exact identity example; every file still needs an explicit provenance row.
-The module owns only its sink ABI/app-side accounting. Capture controllers,
-native image/queue lifetime and global restart admission remain consumer-owned.
+The sink module owns its sink ABI/app-side accounting. The nested controller
+owns neutral finite orchestration source only; real firmware drivers, durable
+external custody, native image/queue lifetime and global restart admission remain
+consumer-owned. For controller changes run its dedicated headless runner against
+the exact sink inventory and pinned SDK; do not rerun unchanged sink suites.
+Honor any active no-foreground constraint: run headless tests and explicitly
+reuse only byte-unchanged shader/compiler evidence rather than launching probes.
 
 Workstream integrator selects branches/remotes and stages scoped files. Other
 workers own assigned files only and must preserve other workers' changes.
