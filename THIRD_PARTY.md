@@ -51,3 +51,14 @@ retained private text, identities, profile values, effects or history is importe
 The [sink inventory](adapters/capture-bridge/controller/SINK-DEPENDENCY.json)
 pins eight existing public source files; the controller does not duplicate them.
 The real vendor and durable original-custody providers are intentionally absent.
+
+The audio-neutral mapper consumes the immutable AudioSnapshot/AudioClockDomain
+from public Synedelica-Spatial revision
+`ad6a5341f0fc185a89d81b1dd1b880b3eaa7a0c7` (AGPL-3.0-or-later). Its
+[supplier inventory](adapters/audio-neutral/SYN-SUPPLIER.json) pins the exact
+source SHA-256 and Git blob. The source is compiled from an explicitly supplied
+checkout, without copying or transferring ownership. Mapper/tests/example are
+newly authored. The complete audio retirement-v2 owner/sink protocol remains
+with the embedding application; no private app, recovered profile or original
+asset value is included. Kotlin2.1.0 and JUnit4.13.2 are external build/test
+dependencies; their binaries and generated distribution remain ignored.

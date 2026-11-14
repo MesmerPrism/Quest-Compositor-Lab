@@ -33,6 +33,38 @@ class BoundaryTests(unittest.TestCase):
     def test_reviewed_closure_passes(self):
         self.assertEqual([], check(self.root))
 
+    def test_audio_kotlin_and_build_inputs_have_narrow_admission(self):
+        for name in ('adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/Mapper.kt',
+                     'adapters/audio-neutral/src/test/kotlin/io/github/mesmerprism/questcompositor/audioneutral/MapperTest.kt',
+                     'adapters/audio-neutral/build.gradle.kts', 'adapters/audio-neutral/settings.gradle.kts',
+                     'examples/audio-reactive/AudioNeutralExample.kt'):
+            self.files[name] = b'// reviewed synthetic source fixture\n'
+        self.write()
+        self.assertEqual([], check(self.root))
+
+    def test_audio_sibling_kotlin_build_scripts_and_binaries_stay_excluded(self):
+        for name in ('adapters/audio-neutral/other.gradle.kts', 'foreign/Code.kt',
+                     'examples/audio-reactive/Other.kt', 'adapters/audio-neutral/runtime.jar'):
+            self.files[name] = b'forbidden even with a notice\n'
+        self.write()
+        for name in set(self.files) - {'README.md'}:
+            self.assertIn('unsupported public payload: ' + name, check(self.root))
+
+    def test_audio_compiler_cache_cannot_be_admitted_or_force_staged(self):
+        name = 'adapters/audio-neutral/.kotlin/synthetic-cache.bin'
+        target = self.root / name
+        target.parent.mkdir(parents=True)
+        target.write_bytes(b'generated\x00')
+        self.assertEqual([], check(self.root))
+        self.files[name] = b'generated\x00'
+        self.write()
+        self.assertTrue(any('cannot be admitted' in item for item in check(self.root)))
+        del self.files[name]
+        self.write()
+        subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
+        subprocess.run(['git', '-C', str(self.root), 'add', '-f', name], check=True)
+        self.assertIn('unadmitted index path: ' + name, check(self.root))
+
     def test_java_is_admitted_only_in_reviewed_capture_source_locations(self):
         for name in ('adapters/capture-bridge/src/main/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java',
                      'adapters/capture-bridge/src/android/java/io/github/mesmerprism/questcompositor/capturebridge/Example.java',

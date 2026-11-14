@@ -23,6 +23,14 @@ JAVA_SOURCE_PREFIXES = (
     'adapters/capture-bridge/controller/tests/java/io/github/mesmerprism/questcompositor/capturebridge/controller/',
 )
 JAVA_EXAMPLE = 'examples/wide-stereo-source/IdentitySinkExample.java'
+AUDIO_KOTLIN_PREFIXES = (
+    'adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/',
+    'adapters/audio-neutral/src/test/kotlin/io/github/mesmerprism/questcompositor/audioneutral/',
+)
+AUDIO_BUILD_FILES = {'adapters/audio-neutral/build.gradle.kts',
+                     'adapters/audio-neutral/settings.gradle.kts'}
+AUDIO_EXAMPLE = 'examples/audio-reactive/AudioNeutralExample.kt'
+AUDIO_GENERATED_CACHE = 'adapters/audio-neutral/.kotlin'
 
 
 def check(root: Path) -> list[str]:
@@ -50,6 +58,8 @@ def check(root: Path) -> list[str]:
                 raise ValueError('unsafe path')
             if path.parts[0] in IGNORED_DIRS or any(p in IGNORED_DIRS for p in path.parts):
                 raise ValueError('ignored path cannot be admitted')
+            if name == AUDIO_GENERATED_CACHE or name.startswith(AUDIO_GENERATED_CACHE + '/'):
+                raise ValueError('generated audio compiler cache cannot be admitted')
             if name in admitted:
                 raise ValueError('duplicate')
             if entry['license'] != 'AGPL-3.0-or-later' or not isinstance(entry['origin'], str) or not entry['origin'].strip():
@@ -73,7 +83,7 @@ def check(root: Path) -> list[str]:
             if item.is_symlink() or item.is_junction():
                 errors.append(f'link forbidden: {name}')
             elif item.is_dir():
-                if item.name not in IGNORED_DIRS:
+                if item.name not in IGNORED_DIRS and name != AUDIO_GENERATED_CACHE:
                     visit(item)
             elif item.is_file():
                 if item.suffix == '.pyc':
@@ -85,7 +95,9 @@ def check(root: Path) -> list[str]:
                     errors.append(f'excluded payload name: {name}')
                 neutral_java = item.suffix == '.java' and (
                     name.startswith(JAVA_SOURCE_PREFIXES) or name == JAVA_EXAMPLE)
-                if item.name not in SPECIAL_NAMES and item.suffix not in ALLOWED_SUFFIXES and not neutral_java:
+                neutral_audio = name in AUDIO_BUILD_FILES or (item.suffix == '.kt' and (
+                    name.startswith(AUDIO_KOTLIN_PREFIXES) or name == AUDIO_EXAMPLE))
+                if item.name not in SPECIAL_NAMES and item.suffix not in ALLOWED_SUFFIXES and not neutral_java and not neutral_audio:
                     errors.append(f'unsupported public payload: {name}')
                 data = item.read_bytes()
                 try:

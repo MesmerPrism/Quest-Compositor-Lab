@@ -57,6 +57,15 @@
       "path": "libs/gui/include/gui/BufferItemConsumer.h",
       "sha256": "0ad0c5e763fc443b5574c415a864c60745ed80034423cedc25448d472cee1ca1",
       "use": "framework Java-acquisition/fence-wait source-contract reference only; no implementation bytes imported; no proprietary runtime proof"
+    },
+    {
+      "repository": "https://github.com/MesmerPrism/Synedelica-Spatial",
+      "revision": "ad6a5341f0fc185a89d81b1dd1b880b3eaa7a0c7",
+      "path": "core/src/main/kotlin/io/github/mesmerprism/synedelica/core/AudioSnapshot.kt",
+      "git_blob": "3bece0e395360888eee1f6d0108444d877374bf9",
+      "sha256": "73b6e71e665764144f8e151ed8cb0f8bc20c2669f6032c3892f4081be0e87139",
+      "license": "AGPL-3.0-or-later",
+      "use": "exact immutable public audio input compiled externally; no capture/resource owner transfer"
     }
   ],
   "files": [
@@ -68,13 +77,13 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "fe3f97f0d7157dfe6df8e64a65c031879754be220e5e95f004274a984eace078",
+      "sha256": "83214deedc55cf269a8fa43d1e385ffa3815a7559346e4f8670486f08ce5cccd",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
     {
       "path": ".planning/CONTINUATION.md",
-      "sha256": "6d9aa89da6929f672d7177eb46c3f97b5d81ac693731aa1752cdeab22509bf43",
+      "sha256": "eac11488dc3deb26e51d6473a284feb7f3b02a62d4c4aece5d1cf4fab5659656",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -218,7 +227,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "bfb39a50e7152045daa9fda11c8886f23789bf82e4a59e6df3d6761e72334ed0",
+      "sha256": "24821936b63facd60aa663f9503096541a3a7337bd5142e71c90ec0de390b2e7",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -266,7 +275,7 @@
     },
     {
       "path": "tests/test_public_boundary.py",
-      "sha256": "411cfbc5b54cc5350cfb03cc8487abc3bbef6ffcff7346b787c9e0437fd8a902",
+      "sha256": "8336006b78155225b01378442aef7d96345b9de462c6290db96b8fb48c703325",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -278,7 +287,7 @@
     },
     {
       "path": "THIRD_PARTY.md",
-      "sha256": "dbd9746ac9e52b1ec771a24c72fb5e3cf3213039a353dac81926619df99f9d20",
+      "sha256": "0b384b7672163ba5d80a35d7fe73e1679230a66e5fd8e48cdeb9d41e44034d77",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -290,7 +299,7 @@
     },
     {
       "path": "tools/check_public_boundary.py",
-      "sha256": "398dc5194fc2ddba3066700cfa64f3388960c32cff605f8a62ace5ff60eb3932",
+      "sha256": "f13b80252c2edbc776aaa874c6198e39789cfa2de9e7da26dab6141391977c3c",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -575,6 +584,60 @@
       "sha256": "5e1bf188531f64d5a9affeae3781d01696da110559af061d1fe24325c25245db",
       "license": "AGPL-3.0-or-later",
       "origin": "authored neutral guide from frozen producer/consumer owner alignment and public sink APIs; no implementation text, private pin table, vendor material or media copied"
+    },
+    {
+      "path": "adapters/audio-neutral/build.gradle.kts",
+      "sha256": "aa0cfa50cccc45503246fbf0f572805e9c463b852b3a39e203bc239840e15f5a",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/settings.gradle.kts",
+      "sha256": "166312488d4644c26cab7389ab30f29dcb1796a644e71b9a684439b8b00d0fd1",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/SYN-SUPPLIER.json",
+      "sha256": "3afd9b2f2ab898867b7a227a7ee85cd9d81fb0435db659df7c548098bf01efa5",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/run_conformance.py",
+      "sha256": "f8ffc30b8a004467fa14417e7094b4e530e5ebe3030be3edd98468c7bcc26d0b",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/README.md",
+      "sha256": "ea1f38dba52a957250d99cb8f6962d203b958ceabe3ec7945a0a8b05d1aed845",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/AudioNeutralMapper.kt",
+      "sha256": "5747a7549b3abf29b1e8cfc7623311cef54599271225176e63575976da75d154",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/test/kotlin/io/github/mesmerprism/questcompositor/audioneutral/AudioNeutralMapperTest.kt",
+      "sha256": "91ec9df52083f41371cb447c900366e68efc0c4284b4bc834e4a7ec4001bdf94",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "examples/audio-reactive/AudioNeutralExample.kt",
+      "sha256": "a9a1aae364116d9448aed26c6b084c4facc8cbc8531e36ddaea7d4a87d255b0a",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "examples/audio-reactive/README.md",
+      "sha256": "84d99919bbe1e3f1a84888d53f74a008a4354ea0e33d6df4b2bd24ede1fbd4ae",
+      "license": "AGPL-3.0-or-later",
+      "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
     }
   ],
   "deliveries": [

@@ -207,3 +207,44 @@ gate. There are 86 admitted files with all previous notices/pins preserved and
 two additional public AOSP references. The source branch remains a retained
 ancestor of main's following continuation checkpoint. Its final containing ref
 and exact readbacks are recorded in ignored `local/CHECKPOINT-CONSUMER-GUIDE.json`.
+
+## Audio-to-neutral parameter example — 14 November 2026
+
+The existing repository had static RGB controls and optical wire vectors, but
+no audio-to-neutral consumer. A small pure Kotlin mapper now consumes the exact
+public Synedelica-Spatial AudioSnapshot at
+`ad6a5341f0fc185a89d81b1dd1b880b3eaa7a0c7`, its retirement-v2 source cohort.
+Only that immutable value is compiled as an external source input. The existing
+six-file optical supplier retains its distinct owner/clock contract unchanged.
+
+The stateless mapper requires the host's current selected generation, sequence,
+original BOOTTIME timestamp and clock, checks inclusive 250 ms freshness and
+finite/ranged inputs, and maps amplitude/RMS to authored bounded red/blue sample
+offsets or blue-only. Invalid, changed, stopped or expired selections are neutral.
+Cached output rechecks the original identity and age before define emission;
+draws do not refresh source time. Host ordering, actual capture and complete
+audio-v2 physical retirement/Whole joins remain outside this data mapper.
+
+No shader body/uniform ABI changed. Existing compile-time RGB controls carry
+synthetic output snapshots; this is not a dynamic upload or per-frame shader
+recompilation implementation. The fixed blur kernel is unchanged. Old optical
+carrier jumps/tearing/visibility and wearer evidence remain unresolved.
+
+Meaningful TDD first compiled the neutral-only skeleton and observed 11 assertion
+failures in 12 tests. Implementation then passed all 12. The independent Gradle
+9.4.1/JVM17/Kotlin2.1.0 build also passed the 12 JUnit cases and built the real
+synthetic consumer. Its first test task executed; the final conformance run
+reused those exact unchanged passing results through Gradle's up-to-date check.
+All five emitted JVM cases and their actual glslc stage checks executed in that
+final conformance run using the
+unchanged vertex/fragment bodies; this is stage-compilation evidence, not link,
+GPU, native upload/adoption or display evidence. Boundary tests pass including
+narrow Kotlin/build-script admission and compiled-cache force-stage rejection.
+
+Generated logs, classes, JARs and SPIR-V stay ignored. No microphone, Android
+runtime, graphics context, device, recording or renderer was initialized. No
+Synedelica, carrier or Quest tracked file was changed. The source branch
+`codex/audio-neutral-parameters` is based on retained public
+`b7a622188f4052c77dcd3526fa2ef27b024127dc`. Independent Sol 6.1 xhigh review
+passed the bounded feature/public source with no actionable findings. Final
+remote consolidation remains pending for this source slice.

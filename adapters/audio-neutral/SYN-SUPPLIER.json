@@ -1,0 +1,19 @@
+{
+  "schema": "quest.compositor.audio-neutral.supplier.v1",
+  "repository": "https://github.com/MesmerPrism/Synedelica-Spatial",
+  "revision": "ad6a5341f0fc185a89d81b1dd1b880b3eaa7a0c7",
+  "cohort": "public audio retirement v2; mapper consumes only immutable core values",
+  "files": [
+    {
+      "path": "core/src/main/kotlin/io/github/mesmerprism/synedelica/core/AudioSnapshot.kt",
+      "git_blob": "3bece0e395360888eee1f6d0108444d877374bf9",
+      "sha256": "73b6e71e665764144f8e151ed8cb0f8bc20c2669f6032c3892f4081be0e87139",
+      "license": "AGPL-3.0-or-later",
+      "use": "exact external compilation input; no mutable source copy"
+    }
+  ],
+  "resource_contract": "docs/INTEGRATION.md at the same revision; physical retirement v2 remains host-owned",
+  "clock_domain": "BOOTTIME",
+  "maximum_capture_age_ns": 250000000,
+  "capture_or_resource_owner_transfer": false
+}
