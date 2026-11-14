@@ -32,11 +32,16 @@ prepared frame cannot become active again. Source time is never refreshed by a
 draw. This BOOTTIME path does not relabel the legacy optical envelope's
 CLOCK_MONOTONIC timestamps.
 
-The existing shader controls are compile-time defines, not native uniforms.
+The original shader controls are compile-time defines, not native uniforms.
 The [JVM example](../../examples/audio-reactive/README.md) and conformance runner
 compile synthetic snapshots into unchanged shader bodies. They are an offline
 consumer example, not a per-frame recompilation strategy or an audio-reactive
 runtime upload path. The fixed blur kernel remains unchanged.
+
+A separate [GLES consumer](GLES-CONSUMER.md) now uses the same source bodies
+through an explicitly versioned app-owned uniform prefix and a concrete
+`GLSurfaceView.Renderer`. Its direct GLES calls are source/API-compiled only;
+the offline snapshot example above retains its original scope.
 
 For real queued work, recheck the same original key/time at actual native use,
 and run expiry/removal even if no new audio arrives.

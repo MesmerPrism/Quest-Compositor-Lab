@@ -50,6 +50,32 @@ class BoundaryTests(unittest.TestCase):
         for name in set(self.files) - {'README.md'}:
             self.assertIn('unsupported public payload: ' + name, check(self.root))
 
+    def test_gles_consumer_has_narrow_android_and_example_admission(self):
+        for name in (
+            'adapters/audio-neutral/src/android/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/Pass.kt',
+            'examples/audio-reactive/AudioUniformShaderExample.kt',
+            'examples/audio-reactive/android/AudioNeutralSurfaceRenderer.kt',
+        ):
+            self.files[name] = b'// reviewed GLES source fixture\n'
+        self.write()
+        self.assertEqual([], check(self.root))
+
+    def test_gles_android_siblings_and_unlisted_source_stay_excluded(self):
+        for name in (
+            'adapters/audio-neutral/src/android/kotlin/foreign/Pass.kt',
+            'adapters/audio-neutral/src/android/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles2/Pass.kt',
+            'examples/audio-reactive/android/Other.kt',
+        ):
+            self.files[name] = b'not admitted as public Kotlin\n'
+        self.write()
+        for name in set(self.files) - {'README.md'}:
+            self.assertIn('unsupported public payload: ' + name, check(self.root))
+        name = 'adapters/audio-neutral/src/android/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/Unlisted.kt'
+        target = self.root / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text('// unreviewed')
+        self.assertIn('unadmitted file: ' + name, check(self.root))
+
     def test_audio_compiler_cache_cannot_be_admitted_or_force_staged(self):
         name = 'adapters/audio-neutral/.kotlin/synthetic-cache.bin'
         target = self.root / name

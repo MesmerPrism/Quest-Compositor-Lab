@@ -62,3 +62,10 @@ newly authored. The complete audio retirement-v2 owner/sink protocol remains
 with the embedding application; no private app, recovered profile or original
 asset value is included. Kotlin2.1.0 and JUnit4.13.2 are external build/test
 dependencies; their binaries and generated distribution remain ignored.
+
+The app-owned GLES adapter, dynamic prefix, SDK renderer example and conformance
+runner are newly authored AGPL-3.0-or-later source. Existing shader bodies are
+unchanged. Android API34 SDK declarations are an external compile input with
+SHA-256 `6cea1df3efb77103ac3e2beb9bf4718964b0e0869ab16d39d29d5cbae1c147ad`;
+the SDK jar and runtime are not copied. No private shader, recovered asset or
+capture implementation is imported by this integration.

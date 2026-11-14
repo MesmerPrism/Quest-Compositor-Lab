@@ -25,6 +25,10 @@ consumer-owned. For controller changes run its dedicated headless runner against
 the exact sink inventory and pinned SDK; do not rerun unchanged sink suites.
 Honor any active no-foreground constraint: run headless tests and explicitly
 reuse only byte-unchanged shader/compiler evidence rather than launching probes.
+For audio GLES changes run `adapters/audio-neutral/run_gles_conformance.py` with
+the exact supplier, Gradle, API34 SDK and glslc inputs. It compiles the real
+Android consumer and dynamic shader prefix without executing Android/GLES.
+Uniform-source/API compilation is distinct from actual driver upload evidence.
 
 Workstream integrator selects branches/remotes and stages scoped files. Other
 workers own assigned files only and must preserve other workers' changes.

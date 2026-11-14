@@ -256,3 +256,51 @@ admitted files; 79 other prior inputs and all shader bodies remain unchanged.
 The source branch remains a retained ancestor of main's following continuation
 checkpoint. Its final containing ref/readbacks and exact conformance/reuse
 evidence are retained in ignored `local/CHECKPOINT-AUDIO-NEUTRAL.json`.
+
+## App-owned audio GLES consumer — 14 November 2026
+
+The selected source branch is `codex/gles-audio-uniform-consumer`, based on
+retained public checkpoint `84f51ff99c510126e89ad506c358ce8f4833c61a`.
+This repository has no production Android app loop. The isolated contribution
+therefore uses the concrete Android `GLSurfaceView.Renderer` seam and direct
+`GLES31` shader compile/link, uniform and per-eye draw calls. It is complete
+source for an embedding app's existing texture/audio owners, with exact asset
+staging and Android API compilation, rather than a claimed running pipeline.
+
+The separate versioned `quest.compositor.audio-neutral.gles-pass.v1` prefix
+reuses all unchanged authored shader bodies. Identity is neutral, RGB/blue-only
+uses the existing bounded mapper, and either single blur pass mixes the original
+with its fixed five-tap kernel by RMS. A full separable graph still needs host
+intermediates/FBOs. Each draw reads the current owner observation, samples Android
+BOOTTIME after that read, rechecks original identity/age and uploads zero on
+missing/stopped/mismatched/expired audio. Continuous rendering evaluates expiry
+without fresh audio. Input failures clear black and actual callback/GL errors
+disable the pass with an exposed/logged error.
+
+Meaningful TDD compiled the neutral-only new uniform mapper and observed two
+new assertion failures among 15 cases; implementation then passed all 15.
+The real Gradle build executed those tests and compiled both Android sources
+against the pinned API34 jar. The final conformance run reused the exact passing
+15-case result via Gradle's up-to-date check, recompiled the changed SDK example
+and executed actual JVM assembly plus glslc stage compilation/reflection for all
+five passes. Both vertex and fragment stages pass their required uniform type
+checks. Narrow Android/example admission first failed the positive test, then
+all 20 boundary cases passed after the scoped gate update. Generated output and
+raw receipts remain ignored. The external public Synedelica ad6 snapshot pin
+and all other source owners remain unchanged.
+
+Source, SDK declaration and compiler interface results do not prove actual
+driver linking, uniform upload, GPU pixels, display or retirement. Texture
+storage/producer synchronization, audio selection ordering, focus/lifecycle and
+audio-v2/Whole physical closure stay with the embedding host. A stalled or paused
+render loop cannot promise immediate physical removal. GL deletion or queued
+release completion is not a retirement ACK. No Android runtime, graphics
+context, capture/microphone/device, foreground probe or exclusive resource is
+started by this contribution. Independent bounded review and publication are
+the source-checkpoint gates. Review identified one ordinary asset/provider
+IOException escaping RuntimeException-only handlers. The corrected consumer
+catches ordinary Exception, disables before cleanup and separately attempts
+release/black clear while preserving the original error with suppressed cleanup
+failures. The bounded fix rereview found no remaining material cleanup issue;
+the real SDK compile and five compiler-interface cases pass on the corrected
+source. Publication remains the final source-checkpoint step.

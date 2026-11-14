@@ -26,10 +26,13 @@ JAVA_EXAMPLE = 'examples/wide-stereo-source/IdentitySinkExample.java'
 AUDIO_KOTLIN_PREFIXES = (
     'adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/',
     'adapters/audio-neutral/src/test/kotlin/io/github/mesmerprism/questcompositor/audioneutral/',
+    'adapters/audio-neutral/src/android/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/',
 )
 AUDIO_BUILD_FILES = {'adapters/audio-neutral/build.gradle.kts',
                      'adapters/audio-neutral/settings.gradle.kts'}
-AUDIO_EXAMPLE = 'examples/audio-reactive/AudioNeutralExample.kt'
+AUDIO_EXAMPLES = {'examples/audio-reactive/AudioNeutralExample.kt',
+                  'examples/audio-reactive/AudioUniformShaderExample.kt',
+                  'examples/audio-reactive/android/AudioNeutralSurfaceRenderer.kt'}
 AUDIO_GENERATED_CACHE = 'adapters/audio-neutral/.kotlin'
 
 
@@ -96,7 +99,7 @@ def check(root: Path) -> list[str]:
                 neutral_java = item.suffix == '.java' and (
                     name.startswith(JAVA_SOURCE_PREFIXES) or name == JAVA_EXAMPLE)
                 neutral_audio = name in AUDIO_BUILD_FILES or (item.suffix == '.kt' and (
-                    name.startswith(AUDIO_KOTLIN_PREFIXES) or name == AUDIO_EXAMPLE))
+                    name.startswith(AUDIO_KOTLIN_PREFIXES) or name in AUDIO_EXAMPLES))
                 if item.name not in SPECIAL_NAMES and item.suffix not in ALLOWED_SUFFIXES and not neutral_java and not neutral_audio:
                     errors.append(f'unsupported public payload: {name}')
                 data = item.read_bytes()

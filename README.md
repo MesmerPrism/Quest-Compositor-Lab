@@ -64,6 +64,10 @@ of the [optional optical carrier experiment](docs/AUDIO_CARRIER_EXPERIMENT.md).
 The [audio-to-neutral mapper](adapters/audio-neutral/README.md) independently
 consumes a pinned public Synedelica snapshot and supplies a synthetic RGB/blue
 compile-time consumer example, with final-emission freshness checks and no capture.
+The separate [app-owned GLES consumer](adapters/audio-neutral/GLES-CONSUMER.md)
+adds per-frame uniform/draw source and a concrete Android surface hookup for
+identity, single blur passes and RGB. Its JVM, SDK and shader-interface checks
+do not establish actual Android uploads, GPU execution or display.
 
 Current source milestone, evidence limits and next work live in the single
 [continuation](.planning/CONTINUATION.md).

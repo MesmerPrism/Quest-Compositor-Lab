@@ -1,0 +1,17 @@
+{
+  "schema": "quest.compositor.audio-neutral.gles-pass.v1",
+  "input": "host-owned same-share-group packed stereo GL_TEXTURE_2D",
+  "shader_language": "GLSL ES 310",
+  "required_uniforms": {
+    "vertex": {"eye": "float", "screenOrientationAdjustment": "vec4"},
+    "Identity": {},
+    "CleanRgb": {"labAudioActive": "int", "labAudioRgb": "vec3"},
+    "BlueOnly": {"labAudioActive": "int", "labAudioRgb": "vec3"},
+    "BlurHorizontal": {"labAudioBlurMix": "float"},
+    "BlurVertical": {"labAudioBlurMix": "float"}
+  },
+  "sampler": {"name": "tex", "binding": 0, "type": "sampler2D"},
+  "clock": "Android BOOTTIME elapsedRealtimeNanos sampled at upload after current host audio observation",
+  "identity_reset": "active=0, RGB strengths=0, blurMix=0 each draw on invalid/stopped/missing/expired audio",
+  "scope": "app-owned GLES passes; not the retail/native compositor preamble or a physical retirement acknowledgment"
+}

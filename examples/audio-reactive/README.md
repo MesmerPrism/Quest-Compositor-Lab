@@ -17,3 +17,8 @@ case maps amplitude/RMS to bounded red/blue offsets and `blue` keeps red neutral
 Synthetic timestamps and values are authored fixtures, not audio recordings or
 hardware observations. Emitting or compiling a snapshot does not submit it to
 a native renderer and does not refresh capture age.
+
+The separate [Android surface example](../../adapters/audio-neutral/GLES-CONSUMER.md)
+uses a versioned dynamic uniform prefix and direct GLES calls on every frame.
+`AudioUniformShaderExample` exports that same assembler for headless compiler
+interface checks. These additions do not change this synthetic snapshot CLI.

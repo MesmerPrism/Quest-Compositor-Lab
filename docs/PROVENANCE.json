@@ -83,13 +83,13 @@
     },
     {
       "path": ".planning/CONTINUATION.md",
-      "sha256": "f3e26ef7a17834c7ca3ad61bcce5d6bb2d8d0a0f08f26771462ace8ccac348a3",
+      "sha256": "d9270f07111cf04a828ed14def8fa611ff6b937a87cec2bd2db4938b7b670ebc",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
     {
       "path": "AGENTS.md",
-      "sha256": "6370ab1ed05e3daf7edc7ca112301b0b5d39b6e21550360fe839d991c155ab02",
+      "sha256": "7d42201907a8fc240504f0fa586e8cffd993d296f3a2137cd729e8a09cbc92eb",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -227,7 +227,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "24821936b63facd60aa663f9503096541a3a7337bd5142e71c90ec0de390b2e7",
+      "sha256": "7a51921d176e9220cbfba0f413f22659c278c91235d791af01ec6ab0621e174a",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -275,7 +275,7 @@
     },
     {
       "path": "tests/test_public_boundary.py",
-      "sha256": "8336006b78155225b01378442aef7d96345b9de462c6290db96b8fb48c703325",
+      "sha256": "0dcef8914566b6e05d48cc255a97d38c393c080b20346eda8501ef374fb7adcf",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -287,7 +287,7 @@
     },
     {
       "path": "THIRD_PARTY.md",
-      "sha256": "0b384b7672163ba5d80a35d7fe73e1679230a66e5fd8e48cdeb9d41e44034d77",
+      "sha256": "2b26461a7431e8d59fcae76eabd2ac016aa29e6191fbf779d4541842ff4133c4",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -299,7 +299,7 @@
     },
     {
       "path": "tools/check_public_boundary.py",
-      "sha256": "f13b80252c2edbc776aaa874c6198e39789cfa2de9e7da26dab6141391977c3c",
+      "sha256": "646d6e878bed5490a50ead2b8e946f7557c401e49c2ed35587796e4d2553861f",
       "license": "AGPL-3.0-or-later",
       "origin": "independently authored for this repository; no imported source history"
     },
@@ -587,7 +587,7 @@
     },
     {
       "path": "adapters/audio-neutral/build.gradle.kts",
-      "sha256": "aa0cfa50cccc45503246fbf0f572805e9c463b852b3a39e203bc239840e15f5a",
+      "sha256": "37485d16bc22e3e6ae0c758a7c3d82c9dfe49115792e93e874c3c89e866ec7bb",
       "license": "AGPL-3.0-or-later",
       "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
     },
@@ -611,7 +611,7 @@
     },
     {
       "path": "adapters/audio-neutral/README.md",
-      "sha256": "ea1f38dba52a957250d99cb8f6962d203b958ceabe3ec7945a0a8b05d1aed845",
+      "sha256": "33b8b8b765f3a7fc7f75890ce8e877dd0b7ec2dcbab604343e6ca3fd3f97d66a",
       "license": "AGPL-3.0-or-later",
       "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
     },
@@ -635,9 +635,63 @@
     },
     {
       "path": "examples/audio-reactive/README.md",
-      "sha256": "84d99919bbe1e3f1a84888d53f74a008a4354ea0e33d6df4b2bd24ede1fbd4ae",
+      "sha256": "0b32d2737a4c48f1ff390326b899fe87bcdfdc5b728b457dae4e1b57130c66df",
       "license": "AGPL-3.0-or-later",
       "origin": "authored pure audio-to-neutral consumer/example/test/build tool; exact public Synedelica immutable value remains external; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/GLES-ABI.json",
+      "sha256": "329ee50123c7c2960343c2a6d53a6067897e197b55faf3ad9e7a897200f2132b",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/GLES-CONSUMER.md",
+      "sha256": "5a4c52fe5403807097fedbdee5a7812ff46aa8f6a487dfdacdcf9dba21608cf4",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/run_gles_conformance.py",
+      "sha256": "b9547a404e52040975124c9f4072098aed39e015d89c166bc13e91e4aa5d07bf",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/android/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/GlesNeutralPass.kt",
+      "sha256": "ebc070de226747fe76112f132fff270b2f296de64ed976002b78964fa95147b0",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/AudioUniformValues.kt",
+      "sha256": "b5a68dd0ed589398873f956f72d13e3abd26b4968da30b439b49d92f5af999f7",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/main/kotlin/io/github/mesmerprism/questcompositor/audioneutral/gles/NeutralRuntimeShaders.kt",
+      "sha256": "220f1857cad8d4142c56c25a04b867fe15ad6eb51d6cc1fb41b7e13a473106e1",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "adapters/audio-neutral/src/test/kotlin/io/github/mesmerprism/questcompositor/audioneutral/AudioUniformValuesTest.kt",
+      "sha256": "fd2001c4d75cf253fd22d646c466ac7c84815f1f93f23da86288cd7f3642d918",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "examples/audio-reactive/AudioUniformShaderExample.kt",
+      "sha256": "059c0f12851153387a0691267400fb455ce4fb4ab40e51fc0fa969495b61ef8e",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
+    },
+    {
+      "path": "examples/audio-reactive/android/AudioNeutralSurfaceRenderer.kt",
+      "sha256": "7c6002724e6c51314fd3438ea83af300e5f02a44532df113e7c88fedbf3c3f94",
+      "license": "AGPL-3.0-or-later",
+      "origin": "newly authored app-owned GLES audio uniform adapter, SDK example, dynamic prefix, tests or documentation; unchanged public shader bodies and external pinned immutable audio value; no private source/assets copied"
     }
   ],
   "deliveries": [
