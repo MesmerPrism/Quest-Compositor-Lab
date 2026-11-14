@@ -259,7 +259,7 @@ evidence are retained in ignored `local/CHECKPOINT-AUDIO-NEUTRAL.json`.
 
 ## App-owned audio GLES consumer — 14 November 2026
 
-The selected source branch is `codex/gles-audio-uniform-consumer`, based on
+The reviewed source branch is `codex/gles-audio-uniform-consumer`, based on
 retained public checkpoint `84f51ff99c510126e89ad506c358ce8f4833c61a`.
 This repository has no production Android app loop. The isolated contribution
 therefore uses the concrete Android `GLSurfaceView.Renderer` seam and direct
@@ -303,4 +303,17 @@ catches ordinary Exception, disables before cleanup and separately attempts
 release/black clear while preserving the original error with suppressed cleanup
 failures. The bounded fix rereview found no remaining material cleanup issue;
 the real SDK compile and five compiler-interface cases pass on the corrected
-source. Publication remains the final source-checkpoint step.
+source. Independent Sol 6.1 xhigh source/spec/quality and public-closure review
+passed with no remaining P1/P2 findings.
+
+The reviewed source commit is
+`e455d5c5c827e24ae2a9d4973ff800ef6cbce935`. It was fast-forwarded to selected
+main, pushed non-force and independently matched through GitHub's ref API and
+Git ls-remote on 14 November 2026. All 11 reachable source snapshots passed fresh
+public source/history closure under the updated narrow admission gate before
+that push. There are 104 admitted files, with all prior notices/pins retained;
+85 other prior inputs remain byte-identical. The source branch is retained as
+an ancestor of main's following continuation checkpoint, without unmerged source.
+The final containing ref/readbacks, corrected conformance receipt and source
+inventory/history checks are retained in ignored `local/CHECKPOINT-GLES-AUDIO.json`.
+No unchanged broad suite or foreground/device qualification was repeated.
